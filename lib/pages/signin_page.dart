@@ -1,6 +1,7 @@
 import 'package:EasyAuth/helper/helper_functions.dart';
 import 'package:EasyAuth/pages/home_page.dart';
 import 'package:EasyAuth/services/auth_service.dart';
+import 'package:EasyAuth/services/database_service.dart';
 import 'package:EasyAuth/shared/constants.dart';
 import 'package:EasyAuth/shared/loading.dart';
 import 'package:flutter/gestures.dart';
@@ -66,13 +67,9 @@ class _SignInPageState extends State<SignInPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text("Create or Join Groups", style: TextStyle(color: Colors.white, fontSize: 40.0, fontWeight: FontWeight.bold)),
+                  Text("Sign in", style: TextStyle(color: Colors.white, fontSize: 40.0, fontWeight: FontWeight.bold)),
                 
                   SizedBox(height: 30.0),
-                
-                  Text("Sign In", style: TextStyle(color: Colors.white, fontSize: 25.0)),
-
-                  SizedBox(height: 20.0),
                 
                   TextFormField(
                     style: TextStyle(color: Colors.white),

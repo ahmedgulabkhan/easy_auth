@@ -63,14 +63,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text("Create or Join Groups", style: TextStyle(color: Colors.white, fontSize: 40.0, fontWeight: FontWeight.bold)),
+                  Text("Register", style: TextStyle(color: Colors.white, fontSize: 40.0, fontWeight: FontWeight.bold)),
                     
                   SizedBox(height: 30.0),
-                    
-                  Text("Register", style: TextStyle(color: Colors.white, fontSize: 25.0)),
-                    
-                  SizedBox(height: 20.0),
-                    
+
                   TextFormField(
                     style: TextStyle(color: Colors.white),
                     decoration: textInputDecoration.copyWith(labelText: 'Full Name'),
