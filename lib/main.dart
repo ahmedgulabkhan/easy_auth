@@ -1,4 +1,4 @@
-import 'package:EasyAuth/pages/home_page.dart';
+import 'package:EasyAuth/pages/authenticate_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: AuthenticatePage(),
     );
   }
 }
