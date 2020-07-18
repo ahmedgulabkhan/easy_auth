@@ -4,6 +4,7 @@ import 'package:EasyAuth/services/auth_service.dart';
 import 'package:EasyAuth/services/database_service.dart';
 import 'package:EasyAuth/shared/constants.dart';
 import 'package:EasyAuth/shared/loading.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +42,7 @@ class _SignInPageState extends State<SignInPage> {
             userInfoSnapshot.documents[0].data['fullName']
           );
 
-          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
+          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage(userName: userInfoSnapshot.documents[0].data['fullName'])));
         }
         else {
           setState(() {
@@ -115,7 +116,7 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                   ),
                 
-                  SizedBox(height: 10.0),
+                  SizedBox(height: 15.0),
                   
                   Text.rich(
                     TextSpan(
@@ -123,10 +124,9 @@ class _SignInPageState extends State<SignInPage> {
                       style: TextStyle(color: Colors.white, fontSize: 14.0),
                       children: <TextSpan>[
                         TextSpan(
-                          text: 'Register here',
+                          text: 'Register here.',
                           style: TextStyle(
-                            color: Colors.white,
-                            decoration: TextDecoration.underline
+                            color: Colors.blue
                           ),
                           recognizer: TapGestureRecognizer()..onTap = () {
                             widget.toggleView();

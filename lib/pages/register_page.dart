@@ -37,7 +37,7 @@ class _RegisterPageState extends State<RegisterPage> {
           await HelperFunctions.saveUserEmailSharedPreference(email);
           await HelperFunctions.saveUserNameSharedPreference(fullName);
 
-          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
+          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage(userName: fullName)));
         }
         else {
           setState(() {
@@ -122,7 +122,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ),
 
-                  SizedBox(height: 10.0),
+                  SizedBox(height: 15.0),
                     
                   Text.rich(
                     TextSpan(
@@ -130,8 +130,8 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: TextStyle(color: Colors.white, fontSize: 14.0),
                       children: <TextSpan>[
                         TextSpan(
-                          text: 'Sign In',
-                          style: TextStyle(color: Colors.white, decoration: TextDecoration.underline),
+                          text: 'Sign In.',
+                          style: TextStyle(color: Colors.blue),
                           recognizer: TapGestureRecognizer()..onTap = () {
                             widget.toggleView();
                           },
