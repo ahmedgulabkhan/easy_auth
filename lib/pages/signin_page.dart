@@ -74,7 +74,11 @@ class _SignInPageState extends State<SignInPage> {
                 
                   TextFormField(
                     style: TextStyle(color: Colors.white),
-                    decoration: textInputDecoration.copyWith(labelText: 'Email'),
+                    decoration: textInputDecoration.copyWith(
+                      hintText: 'Email',
+                      hintStyle: TextStyle(color: Colors.grey),
+                      prefixIcon: Icon(Icons.alternate_email, color: Colors.white),
+                    ),
                     validator: (val) {
                       return RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(val) ? null : "Please enter a valid email";
                     },
@@ -90,7 +94,11 @@ class _SignInPageState extends State<SignInPage> {
                 
                   TextFormField(
                     style: TextStyle(color: Colors.white),
-                    decoration: textInputDecoration.copyWith(labelText: 'Password'),
+                    decoration: textInputDecoration.copyWith(
+                      hintText: 'Password',
+                      hintStyle: TextStyle(color: Colors.grey),
+                      prefixIcon: Icon(Icons.lock, color: Colors.white),
+                    ),
                     validator: (val) => val.length < 6 ? 'Password not strong enough' : null,
                     obscureText: true,
                     onChanged: (val) {
