@@ -1,6 +1,8 @@
-# EasyAuth
+# easy_auth
 ## About
 A simple Flutter Boilerplate to get you started with Registering and Signing in of users, and store their details on Firebase.
+
+![easy_auth](https://github.com/ahmedgulabkhan/easy_auth/blob/master/gif/easy_auth.gif)
 
 ## Configuration Steps
 1. Cloning the repository:
