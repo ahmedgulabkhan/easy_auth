@@ -60,9 +60,12 @@ class _SignInPageState extends State<SignInPage> {
       body: Form(
         key: _formKey,
         child: Container(
-          color: Colors.black,
-          child: ListView(
-            padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 80.0),
+          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+          color: Colors.black87,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            // padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 80.0),
             children: <Widget>[
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
