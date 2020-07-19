@@ -31,4 +31,4 @@ This installs all the required dependencies like cloud_firestore, firebase_auth,
 
 ## License
 
-- **[MIT license](https://github.com/zyllus17/Ultimate-Flutter-Extension-Pack/blob/master/LICENSE)**
+- **[MIT license](https://github.com/ahmedgulabkhan/easy_auth/blob/master/LICENSE)**
